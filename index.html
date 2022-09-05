@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+        <div id="main">
+                <h1 id="title">Gamer Survey</h1>
+                <p id="description">Fill out this survey with information about yourself as a gamer. </p>
+                <form id="survey-form" action="">
+                        <div id="personal-information">
+                                <label id="name-label" for="name">
+                                        Name:
+                                        <input type="text" id="name" placeholder="Enter your name" required />
+                                </label>
+                                <label id="email-label" for="email">
+                                        Email:
+                                        <input type="email" id="email" placeholder="Enter your email" required />
+                                </label>
+                                <label id="number-label" for="number">
+                                        Age:
+                                        <input type="number" id="number" min="12" max="70" placeholder="Age" required />
+                                </label>
+                        </div>
+                        <div id="console-preference">
+                                <p>Please select the platform you play the most video games on:</p>
+                                <select id="dropdown" name="preferred-platform">
+                                        <option value="">(select one)</option>
+                                        <option value="1">Console (Xbox, Playstation, Switch, etc.)</option>
+                                        <option value="2">PC</option>
+                                        <option value="3">Mobile</option>
+                                </select>
+                        </div>
+                        <div id="play-time">
+                                <p>How many hours every week do you play video games?</p>
+                                <label for="playtime-one">
+                                        <input type="radio" id="playtime-one" name="hours-played" value="0-1" checked />
+                                        1 hour
+                                </label>
+                                <label for="playtime-two">
+                                        <input type="radio" id="playtime-two" name="hours-played" value="1-2" />
+                                        1-2 hours
+                                </label>
+                                <label for="playtime-three">
+                                        <input type="radio" id="playtime-three" name="hours-played" value="2-3" />
+                                        2-3 hours
+                                </label>
+                                <label for="playtime-four">
+                                        <input type="radio" id="playtime-four" name="hours-played" value="3-4" />
+                                        3-4 hours
+                                </label>
+                                <label for="playtime-five">
+                                        <input type="radio" id="playtime-five" name="hours-played" value="4+" />
+                                        4+ hours
+                                </label>
+                        </div>
+                        <div id="game-genres">
+                                <p>Select the genres of game that you play the most:</p>
+                                <label for="genre-action">
+                                        <input type="checkbox" id="genre-action" name="favorite-genres"
+                                                value="action" />
+                                        Action
+                                </label>
+                                <label for="genre-adventure">
+                                        <input type="checkbox" id="genre-adventure" name="favorite-genres"
+                                                value="adventure" />
+                                        Adventure
+                                </label>
+                                <label for="genre-roleplaying">
+                                        <input type="checkbox" id="genre-roleplaying" name="favorite-genres"
+                                                value="roleplaying" />
+                                        Roleplaying
+                                </label>
+                                <label for="genre-singleplayer">
+                                        <input type="checkbox" id="genre-singleplayer" name="favorite-genres"
+                                                value="singleplayer" />
+                                        Single Player
+                                </label>
+                                <label for="genre-multiplayer">
+                                        <input type="checkbox" id="genre-multiplayer" name="favorite-genres"
+                                                value="multiplayer" />
+                                        Multiplayer
+                                </label>
+                                <label for="genre-action">
+                                        <input type="checkbox" id="genre-other" name="favorite-genres" value="other" />
+                                        Other
+                                </label>
+                        </div>
+                        <div>
+                                <p>What games do you play the most?</p>
+                                <textarea name="favorite-games" rows="7" cols="60"
+                                        placeholder="Call of Duty, Mincraft, Overwatch, etc."></textarea>
+                        </div>
+                        <button type="submit" id="submit">Submit</button>
+                </form>
+        </div>
+</body>
+
+</html>

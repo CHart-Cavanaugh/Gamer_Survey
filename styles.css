@@ -1,0 +1,73 @@
+body {
+    background: linear-gradient(90deg, black 0%, #0A3812 30%, #0A3812 70%, black 100%);
+    padding: 0;
+    margin: 0;
+}
+
+#main {
+    background-color: #292929;
+    max-width: 30rem;
+    min-width: 27rem;
+    margin: 3vmin auto;
+    padding: 1.5rem;
+    border: 1px solid #171717;
+    color: white;
+    box-shadow: 4px 4px 10px black;
+}
+
+#title,
+#description {
+    margin: 0;
+    text-align: center;
+}
+
+#title {
+    margin-bottom: .5em;
+    font-style: italic;
+}
+
+#description {
+    margin-bottom: 2em;
+}
+
+label {
+    display: block;
+}
+
+#name,
+#email,
+#number {
+    width: 100%;
+    border: none;
+    vertical-align: middle;
+}
+
+#console-preference select {
+    width: 10em;
+}
+
+#console-preference {
+    margin-bottom: 2%;
+}
+
+#game-genres {
+    margin-bottom: 2%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    background-color: black;
+    color: white;
+}
+
+textarea {
+    max-width: 86%;
+}
+
+#submit {
+    display: block;
+    margin: 1em 0;
+}

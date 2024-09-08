@@ -1,3 +1,9 @@
+* {
+
+    box-sizing: border-box;
+
+}
+
 body {
     background: linear-gradient(90deg, black 0%, #0A3812 30%, #0A3812 70%, black 100%);
     padding: 0;
@@ -6,8 +12,7 @@ body {
 
 #main {
     background-color: #292929;
-    max-width: 30rem;
-    min-width: 27rem;
+    width: 30rem;
     margin: 3vmin auto;
     padding: 1.5rem;
     border: 1px solid #171717;
@@ -70,4 +75,23 @@ textarea {
 #submit {
     display: block;
     margin: 1em 0;
+}
+
+@media (max-width: 992px) {
+
+    #main {
+
+        width: 100%;
+        /* margin: 1rem; */
+
+    }
+
+    #app-container {
+
+        width: 100%;
+        padding: 0 1rem;
+
+    }
+
+
 }
